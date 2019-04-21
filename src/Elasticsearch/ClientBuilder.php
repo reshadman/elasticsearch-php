@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch;
+namespace ElasticsearchV6;
 
 use ElasticsearchV6\Common\Exceptions\InvalidArgumentException;
 use ElasticsearchV6\Common\Exceptions\RuntimeException;
