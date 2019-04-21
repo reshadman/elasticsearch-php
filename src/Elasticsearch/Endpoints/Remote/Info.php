@@ -2,15 +2,15 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints\Remote;
+namespace ElasticsearchV6\Endpoints\Remote;
 
-use Elasticsearch\Endpoints\AbstractEndpoint;
+use ElasticsearchV6\Endpoints\AbstractEndpoint;
 
 /**
  * Class Info
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Cluster\Nodes
+ * @package  ElasticsearchV6\Endpoints\Cluster\Nodes
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co

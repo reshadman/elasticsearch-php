@@ -2,16 +2,16 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints\Indices\Settings;
+namespace ElasticsearchV6\Endpoints\Indices\Settings;
 
-use Elasticsearch\Endpoints\AbstractEndpoint;
-use Elasticsearch\Common\Exceptions;
+use ElasticsearchV6\Endpoints\AbstractEndpoint;
+use ElasticsearchV6\Common\Exceptions;
 
 /**
  * Class Put
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Indices\Settings
+ * @package  ElasticsearchV6\Endpoints\Indices\Settings
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co
@@ -21,7 +21,7 @@ class Put extends AbstractEndpoint
     /**
      * @param array $body
      *
-     * @throws \Elasticsearch\Common\Exceptions\InvalidArgumentException
+     * @throws \ElasticsearchV6\Common\Exceptions\InvalidArgumentException
      * @return $this
      */
     public function setBody($body)
@@ -67,7 +67,7 @@ class Put extends AbstractEndpoint
 
     /**
      * @return array
-     * @throws \Elasticsearch\Common\Exceptions\RuntimeException
+     * @throws \ElasticsearchV6\Common\Exceptions\RuntimeException
      */
     public function getBody()
     {

@@ -4,10 +4,10 @@ declare(strict_types = 1);
 
 namespace Elasticsearch;
 
-use Elasticsearch\Common\Exceptions;
-use Elasticsearch\ConnectionPool\AbstractConnectionPool;
-use Elasticsearch\Connections\Connection;
-use Elasticsearch\Connections\ConnectionInterface;
+use ElasticsearchV6\Common\Exceptions;
+use ElasticsearchV6\ConnectionPool\AbstractConnectionPool;
+use ElasticsearchV6\Connections\Connection;
+use ElasticsearchV6\Connections\ConnectionInterface;
 use GuzzleHttp\Ring\Future\FutureArrayInterface;
 use Psr\Log\LoggerInterface;
 

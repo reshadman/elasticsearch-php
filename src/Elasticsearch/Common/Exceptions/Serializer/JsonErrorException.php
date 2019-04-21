@@ -2,15 +2,15 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Common\Exceptions\Serializer;
+namespace ElasticsearchV6\Common\Exceptions\Serializer;
 
-use Elasticsearch\Common\Exceptions\ElasticsearchException;
+use ElasticsearchV6\Common\Exceptions\ElasticsearchException;
 
 /**
  * Class JsonErrorException
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Common\Exceptions\Curl
+ * @package  ElasticsearchV6\Common\Exceptions\Curl
  * @author   Bez Hermoso <bezalelhermoso@gmail.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co

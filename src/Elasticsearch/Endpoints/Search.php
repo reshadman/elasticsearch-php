@@ -2,16 +2,16 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints;
+namespace ElasticsearchV6\Endpoints;
 
-use Elasticsearch\Common\Exceptions\InvalidArgumentException;
-use Elasticsearch\Common\Exceptions;
+use ElasticsearchV6\Common\Exceptions\InvalidArgumentException;
+use ElasticsearchV6\Common\Exceptions;
 
 /**
  * Class Search
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Endpoints
+ * @package  ElasticsearchV6\Endpoints
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co
@@ -21,7 +21,7 @@ class Search extends AbstractEndpoint
     /**
      * @param array $body
      *
-     * @throws \Elasticsearch\Common\Exceptions\InvalidArgumentException
+     * @throws \ElasticsearchV6\Common\Exceptions\InvalidArgumentException
      * @return $this
      */
     public function setBody($body)

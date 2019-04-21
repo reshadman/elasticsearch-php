@@ -7,16 +7,16 @@ declare(strict_types = 1);
  * Time: 14:34:49 pm
  */
 
-namespace Elasticsearch\Endpoints\Indices\Upgrade;
+namespace ElasticsearchV6\Endpoints\Indices\Upgrade;
 
-use Elasticsearch\Endpoints\AbstractEndpoint;
-use Elasticsearch\Common\Exceptions;
+use ElasticsearchV6\Endpoints\AbstractEndpoint;
+use ElasticsearchV6\Common\Exceptions;
 
 /**
  * Class Post
  *
  * @category Elasticsearch
- * @package Elasticsearch\Endpoints\Indices
+ * @package ElasticsearchV6\Endpoints\Indices
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co

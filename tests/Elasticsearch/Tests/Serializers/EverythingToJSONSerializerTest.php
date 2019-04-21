@@ -2,15 +2,15 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Tests\Serializers;
+namespace ElasticsearchV6\Tests\Serializers;
 
-use Elasticsearch\Serializers\EverythingToJSONSerializer;
+use ElasticsearchV6\Serializers\EverythingToJSONSerializer;
 use Mockery as m;
 
 /**
  * Class EverythingToJSONSerializerTest
  *
- * @package Elasticsearch\Tests\Serializers
+ * @package ElasticsearchV6\Tests\Serializers
  */
 class EverythingToJSONSerializerTest extends \PHPUnit\Framework\TestCase
 {

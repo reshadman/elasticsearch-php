@@ -2,15 +2,15 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints\Cluster\Settings;
+namespace ElasticsearchV6\Endpoints\Cluster\Settings;
 
-use Elasticsearch\Endpoints\AbstractEndpoint;
+use ElasticsearchV6\Endpoints\AbstractEndpoint;
 
 /**
  * Class Get
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Cluster\Settings
+ * @package  ElasticsearchV6\Endpoints\Cluster\Settings
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co

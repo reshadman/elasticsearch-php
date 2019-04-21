@@ -2,16 +2,16 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints;
+namespace ElasticsearchV6\Endpoints;
 
-use Elasticsearch\Common\Exceptions\InvalidArgumentException;
-use Elasticsearch\Serializers\SerializerInterface;
+use ElasticsearchV6\Common\Exceptions\InvalidArgumentException;
+use ElasticsearchV6\Serializers\SerializerInterface;
 
 /**
  * Class Bulk
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Endpoints
+ * @package  ElasticsearchV6\Endpoints
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co

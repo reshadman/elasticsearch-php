@@ -2,16 +2,16 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints\Tasks;
+namespace ElasticsearchV6\Endpoints\Tasks;
 
-use Elasticsearch\Common\Exceptions;
-use Elasticsearch\Endpoints\AbstractEndpoint;
+use ElasticsearchV6\Common\Exceptions;
+use ElasticsearchV6\Endpoints\AbstractEndpoint;
 
 /**
  * Class Get
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Tasks
+ * @package  ElasticsearchV6\Endpoints\Tasks
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co
@@ -23,7 +23,7 @@ class Get extends AbstractEndpoint
     /**
      * @param string $taskId
      *
-     * @throws \Elasticsearch\Common\Exceptions\InvalidArgumentException
+     * @throws \ElasticsearchV6\Common\Exceptions\InvalidArgumentException
      * @return $this
      */
     public function setTaskId($taskId)
@@ -38,7 +38,7 @@ class Get extends AbstractEndpoint
     }
 
     /**
-     * @throws \Elasticsearch\Common\Exceptions\RuntimeException
+     * @throws \ElasticsearchV6\Common\Exceptions\RuntimeException
      * @return string
      */
     public function getURI()

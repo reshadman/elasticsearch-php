@@ -2,10 +2,10 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints\Indices;
+namespace ElasticsearchV6\Endpoints\Indices;
 
-use Elasticsearch\Endpoints\AbstractEndpoint;
-use Elasticsearch\Common\Exceptions;
+use ElasticsearchV6\Endpoints\AbstractEndpoint;
+use ElasticsearchV6\Common\Exceptions;
 
 /**
  * Class Shrink.
@@ -29,7 +29,7 @@ class Shrink extends AbstractEndpoint
     /**
      * @param array $body
      *
-     * @throws \Elasticsearch\Common\Exceptions\InvalidArgumentException
+     * @throws \ElasticsearchV6\Common\Exceptions\InvalidArgumentException
      *
      * @return $this
      */
@@ -60,7 +60,7 @@ class Shrink extends AbstractEndpoint
     }
 
     /**
-     * @throws \Elasticsearch\Common\Exceptions\BadMethodCallException
+     * @throws \ElasticsearchV6\Common\Exceptions\BadMethodCallException
      *
      * @return string
      */

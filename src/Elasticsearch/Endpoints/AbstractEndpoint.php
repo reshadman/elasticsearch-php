@@ -2,11 +2,11 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints;
+namespace ElasticsearchV6\Endpoints;
 
-use Elasticsearch\Common\Exceptions\UnexpectedValueException;
-use Elasticsearch\Serializers\SerializerInterface;
-use Elasticsearch\Transport;
+use ElasticsearchV6\Common\Exceptions\UnexpectedValueException;
+use ElasticsearchV6\Serializers\SerializerInterface;
+use ElasticsearchV6\Transport;
 use Exception;
 use GuzzleHttp\Ring\Future\FutureArrayInterface;
 
@@ -14,7 +14,7 @@ use GuzzleHttp\Ring\Future\FutureArrayInterface;
  * Class AbstractEndpoint
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Endpoints
+ * @package  ElasticsearchV6\Endpoints
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co
@@ -226,7 +226,7 @@ abstract class AbstractEndpoint
     /**
      * @param array $params
      *
-     * @throws \Elasticsearch\Common\Exceptions\UnexpectedValueException
+     * @throws \ElasticsearchV6\Common\Exceptions\UnexpectedValueException
      */
     private function checkUserParams($params)
     {

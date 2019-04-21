@@ -1,6 +1,6 @@
 {
-  "name": "elasticsearch/elasticsearch",
-  "description": "PHP Client for Elasticsearch",
+  "name": "reshadman/elasticsearch-v6",
+  "description": "PHP Client for Elasticsearch GTE 6.0",
   "keywords": ["search","client", "elasticsearch"],
   "type": "library",
   "license": "Apache-2.0",
@@ -34,13 +34,13 @@
   },
   "autoload": {
     "psr-4": {
-      "Elasticsearch\\": "src/Elasticsearch/"
+      "ElasticsearchV6\\": "src/Elasticsearch/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Elasticsearch\\Tests\\": "tests/Elasticsearch/Tests/",
-      "Elasticsearch\\IntegrationTests\\": "tests/Elasticsearch/IntegrationTests/"
+      "ElasticsearchV6\\Tests\\": "tests/Elasticsearch/Tests/",
+      "ElasticsearchV6\\IntegrationTests\\": "tests/Elasticsearch/IntegrationTests/"
     }
   },
   "config": {

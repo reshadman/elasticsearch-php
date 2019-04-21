@@ -2,15 +2,15 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints\Indices\Gateway;
+namespace ElasticsearchV6\Endpoints\Indices\Gateway;
 
-use Elasticsearch\Endpoints\AbstractEndpoint;
+use ElasticsearchV6\Endpoints\AbstractEndpoint;
 
 /**
  * Class Snapshot
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Indices\Gateway
+ * @package  ElasticsearchV6\Endpoints\Indices\Gateway
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co

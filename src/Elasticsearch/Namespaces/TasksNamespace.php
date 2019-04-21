@@ -2,16 +2,16 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Namespaces;
+namespace ElasticsearchV6\Namespaces;
 
-use Elasticsearch\Endpoints\Tasks\Cancel;
-use Elasticsearch\Endpoints\Tasks\Get;
+use ElasticsearchV6\Endpoints\Tasks\Cancel;
+use ElasticsearchV6\Endpoints\Tasks\Get;
 
 /**
  * Class TasksNamespace
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Namespaces\TasksNamespace
+ * @package  ElasticsearchV6\Namespaces\TasksNamespace
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co

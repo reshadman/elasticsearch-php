@@ -2,16 +2,16 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints\Indices\Alias;
+namespace ElasticsearchV6\Endpoints\Indices\Alias;
 
-use Elasticsearch\Common\Exceptions\InvalidArgumentException;
-use Elasticsearch\Endpoints\AbstractEndpoint;
+use ElasticsearchV6\Common\Exceptions\InvalidArgumentException;
+use ElasticsearchV6\Endpoints\AbstractEndpoint;
 
 /**
  * Class AbstractAliasEndpoint
  *
  * @category Elasticsearch
- * @package Elasticsearch\Endpoints\Indices\Alias
+ * @package ElasticsearchV6\Endpoints\Indices\Alias
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co
@@ -24,7 +24,7 @@ abstract class AbstractAliasEndpoint extends AbstractEndpoint
     /**
      * @param string $name
      *
-     * @throws \Elasticsearch\Common\Exceptions\InvalidArgumentException
+     * @throws \ElasticsearchV6\Common\Exceptions\InvalidArgumentException
      *
      * @return $this
      */

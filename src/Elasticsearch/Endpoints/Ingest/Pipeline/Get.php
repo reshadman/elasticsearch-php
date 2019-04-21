@@ -2,16 +2,16 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints\Ingest\Pipeline;
+namespace ElasticsearchV6\Endpoints\Ingest\Pipeline;
 
-use Elasticsearch\Common\Exceptions;
-use Elasticsearch\Endpoints\AbstractEndpoint;
+use ElasticsearchV6\Common\Exceptions;
+use ElasticsearchV6\Endpoints\AbstractEndpoint;
 
 /**
  * Class Get
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Endpoints\Ingest
+ * @package  ElasticsearchV6\Endpoints\Ingest
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co
@@ -19,7 +19,7 @@ use Elasticsearch\Endpoints\AbstractEndpoint;
 class Get extends AbstractEndpoint
 {
     /**
-     * @throws \Elasticsearch\Common\Exceptions\RuntimeException
+     * @throws \ElasticsearchV6\Common\Exceptions\RuntimeException
      * @return string
      */
     public function getURI()

@@ -2,11 +2,11 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\ConnectionPool;
+namespace ElasticsearchV6\ConnectionPool;
 
-use Elasticsearch\ConnectionPool\Selectors\SelectorInterface;
-use Elasticsearch\Connections\Connection;
-use Elasticsearch\Connections\ConnectionFactoryInterface;
+use ElasticsearchV6\ConnectionPool\Selectors\SelectorInterface;
+use ElasticsearchV6\Connections\Connection;
+use ElasticsearchV6\Connections\ConnectionFactoryInterface;
 
 class SimpleConnectionPool extends AbstractConnectionPool implements ConnectionPoolInterface
 {
@@ -23,7 +23,7 @@ class SimpleConnectionPool extends AbstractConnectionPool implements ConnectionP
      * @param bool $force
      *
      * @return Connection
-     * @throws \Elasticsearch\Common\Exceptions\NoNodesAvailableException
+     * @throws \ElasticsearchV6\Common\Exceptions\NoNodesAvailableException
      */
     public function nextConnection($force = false)
     {

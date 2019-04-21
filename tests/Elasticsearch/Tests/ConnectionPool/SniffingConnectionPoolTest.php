@@ -2,14 +2,14 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Tests\ConnectionPool;
+namespace ElasticsearchV6\Tests\ConnectionPool;
 
-use Elasticsearch\ConnectionPool\Selectors\RoundRobinSelector;
-use Elasticsearch\ConnectionPool\SniffingConnectionPool;
-use Elasticsearch\Connections\Connection;
-use Elasticsearch\Connections\ConnectionFactory;
+use ElasticsearchV6\ConnectionPool\Selectors\RoundRobinSelector;
+use ElasticsearchV6\ConnectionPool\SniffingConnectionPool;
+use ElasticsearchV6\Connections\Connection;
+use ElasticsearchV6\Connections\ConnectionFactory;
 use Mockery as m;
-use Elasticsearch\Common\Exceptions\Curl\OperationTimeoutException;
+use ElasticsearchV6\Common\Exceptions\Curl\OperationTimeoutException;
 
 /**
  * Class SniffingConnectionPoolTest
@@ -45,7 +45,7 @@ class SniffingConnectionPoolTest extends \PHPUnit\Framework\TestCase
                           ->getMock();
 
         /**
- * @var \Elasticsearch\Connections\Connection[]&\Mockery\MockInterface[] $connections
+ * @var \ElasticsearchV6\Connections\Connection[]&\Mockery\MockInterface[] $connections
 */
         $connections = [$mockConnection];
 
@@ -75,7 +75,7 @@ class SniffingConnectionPoolTest extends \PHPUnit\Framework\TestCase
                           ->shouldReceive('sniff')->once()->andReturn($clusterState)->getMock();
 
         /**
- * @var \Elasticsearch\Connections\Connection[]&\Mockery\MockInterface[] $connections
+ * @var \ElasticsearchV6\Connections\Connection[]&\Mockery\MockInterface[] $connections
 */
         $connections = [$mockConnection];
         $mockNewConnection = m::mock(Connection::class)
@@ -111,7 +111,7 @@ class SniffingConnectionPoolTest extends \PHPUnit\Framework\TestCase
                           ->shouldReceive('sniff')->once()->andReturn($clusterState)->getMock();
 
         /**
- * @var \Elasticsearch\Connections\Connection[]&\Mockery\MockInterface[] $connections
+ * @var \ElasticsearchV6\Connections\Connection[]&\Mockery\MockInterface[] $connections
 */
         $connections = [$mockConnection];
         $mockNewConnection = m::mock(Connection::class)
@@ -232,7 +232,7 @@ class SniffingConnectionPoolTest extends \PHPUnit\Framework\TestCase
         $connectionPoolParams = ['randomizeHosts' => false];
         $connectionPool = new SniffingConnectionPool($connections, $selector, $connectionFactory, $connectionPoolParams);
 
-        $this->expectException(\Elasticsearch\Common\Exceptions\NoNodesAvailableException::class);
+        $this->expectException(\ElasticsearchV6\Common\Exceptions\NoNodesAvailableException::class);
         $this->expectExceptionMessage('No alive nodes found in your cluster');
 
         $retConnection = $connectionPool->nextConnection();
@@ -249,7 +249,7 @@ class SniffingConnectionPoolTest extends \PHPUnit\Framework\TestCase
                           ->shouldReceive('sniff')->twice()->andReturn($clusterState)->getMock();
 
         /**
- * @var \Elasticsearch\Connections\Connection[]&\Mockery\MockInterface[] $connections
+ * @var \ElasticsearchV6\Connections\Connection[]&\Mockery\MockInterface[] $connections
 */
         $connections = [$mockConnection];
 
@@ -299,7 +299,7 @@ class SniffingConnectionPoolTest extends \PHPUnit\Framework\TestCase
                           ->shouldReceive('sniff')->once()->andReturn($clusterState)->getMock();
 
         /**
-         * @var \Elasticsearch\Connections\Connection[]&\Mockery\MockInterface[] $connections
+         * @var \ElasticsearchV6\Connections\Connection[]&\Mockery\MockInterface[] $connections
          */
         $connections = [$mockConnection];
 
@@ -333,7 +333,7 @@ class SniffingConnectionPoolTest extends \PHPUnit\Framework\TestCase
         ];
         $connectionPool = new SniffingConnectionPool($connections, $selector, $connectionFactory, $connectionPoolParams);
 
-        $this->expectException(\Elasticsearch\Common\Exceptions\NoNodesAvailableException::class);
+        $this->expectException(\ElasticsearchV6\Common\Exceptions\NoNodesAvailableException::class);
         $this->expectExceptionMessage('No alive nodes found in your cluster');
 
         $retConnection = $connectionPool->nextConnection();
@@ -443,7 +443,7 @@ class SniffingConnectionPoolTest extends \PHPUnit\Framework\TestCase
         ];
         $connectionPool = new SniffingConnectionPool($connections, $selector, $connectionFactory, $connectionPoolParams);
 
-        $this->expectException(\Elasticsearch\Common\Exceptions\NoNodesAvailableException::class);
+        $this->expectException(\ElasticsearchV6\Common\Exceptions\NoNodesAvailableException::class);
         $this->expectExceptionMessage('No alive nodes found in your cluster');
 
         $retConnection = $connectionPool->nextConnection();

@@ -2,15 +2,15 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Endpoints;
+namespace ElasticsearchV6\Endpoints;
 
-use Elasticsearch\Common\Exceptions;
+use ElasticsearchV6\Common\Exceptions;
 
 /**
  * Class UpdateByQuery
  *
  * @category Elasticsearch
- * @package Elasticsearch\Endpoints *
+ * @package ElasticsearchV6\Endpoints *
  * @author   Zachary Tong <zachary.tong@elasticsearch.com>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elasticsearch.org
@@ -20,7 +20,7 @@ class UpdateByQuery extends AbstractEndpoint
     /**
      * @param array $body
      *
-     * @throws \Elasticsearch\Common\Exceptions\InvalidArgumentException
+     * @throws \ElasticsearchV6\Common\Exceptions\InvalidArgumentException
      * @return $this
      */
     public function setBody($body)
@@ -41,7 +41,7 @@ class UpdateByQuery extends AbstractEndpoint
 
 
     /**
-     * @throws \Elasticsearch\Common\Exceptions\BadMethodCallException
+     * @throws \ElasticsearchV6\Common\Exceptions\BadMethodCallException
      * @return string
      */
     public function getURI()

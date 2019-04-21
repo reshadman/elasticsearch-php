@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Elasticsearch\Common\Exceptions;
+namespace ElasticsearchV6\Common\Exceptions;
 
 /**
  * BadMethodCallException
@@ -10,7 +10,7 @@ namespace Elasticsearch\Common\Exceptions;
  * Denote problems with a method call (e.g. incorrect number of arguments)
  *
  * @category Elasticsearch
- * @package  Elasticsearch\Common\Exceptions
+ * @package  ElasticsearchV6\Common\Exceptions
  * @author   Zachary Tong <zach@elastic.co>
  * @license  http://www.apache.org/licenses/LICENSE-2.0 Apache2
  * @link     http://elastic.co
